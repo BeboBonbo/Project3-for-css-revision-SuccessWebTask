@@ -1,0 +1,471 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+:root {
+  --accent: #f1bb13;
+  --primary: #111111;
+  --secondary: #34365a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--primary);
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  border-radius: 50px;
+  width: 192px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  a {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+}
+
+.mainBtn {
+  background-color: var(--secondary);
+  border: none;
+  margin-top: 1.5rem;
+  transition: all 0.3s ease;
+
+  a {
+    color: white;
+  }
+}
+
+p.freepik {
+  font-weight: 400;
+  font-style: italic;
+
+  a {
+    border-bottom: solid 1px;
+  }
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  img {
+    width: 64px;
+    /* height: 32px; */
+  }
+
+  nav {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 2rem;
+
+    a {
+      color: var(--secondary);
+      font-size: 16px;
+      font-weight: 700;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+  }
+}
+
+#hero-section {
+  background-color: var(--accent);
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 2rem;
+
+  img {
+    width: 800px;
+  }
+
+  div {
+    max-width: 550px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+
+    h1 {
+      font-size: 1.2rem;
+      font-weight: 400;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: 48px;
+      font-weight: 700;
+
+      span {
+        color: var(--secondary);
+      }
+    }
+
+    button:hover {
+      background-color: black;
+    }
+  }
+}
+
+#helping {
+  width: 75%;
+  margin-block: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  h2 {
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  .discription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    .department {
+      width: 100%;
+      height: 363.8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .content {
+        width: 50%;
+        height: 100%;
+      }
+
+      .img1,
+      .img2,
+      .img3 {
+        width: 50%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+
+    .no1 {
+      .img1 {
+        background-image: url(https://ammaralzaqam.github.io/Eraasoft.css-l6_successWebTask-html-css/images/help/plan.jpg);
+      }
+
+      .content {
+        background-color: var(--accent);
+        padding: 2rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+
+        h3 {
+          font-size: 30px;
+          font-weight: 700;
+        }
+
+        button {
+          border: 2px solid var(--secondary);
+          background-color: inherit;
+
+          a {
+            color: var(--secondary);
+          }
+        }
+      }
+    }
+
+    .no2 {
+      .content {
+        background-color: var(--secondary);
+        padding: 2rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: start;
+
+        h3 {
+          font-size: 30px;
+          color: white;
+          font-weight: 700;
+        }
+
+        p {
+          color: white;
+        }
+
+        button {
+          border: 2px solid white;
+          background-color: inherit;
+
+          a {
+            color: white;
+          }
+        }
+      }
+
+      .img2 {
+        background-image: url(https://ammaralzaqam.github.io/Eraasoft.css-l6_successWebTask-html-css/images/help/man-lap.png);
+      }
+    }
+
+    .no3 {
+      .img3 {
+        background-image: url(https://ammaralzaqam.github.io/Eraasoft.css-l6_successWebTask-html-css/images/help/meeting.jpg);
+      }
+
+      .content {
+        background-color: var(--accent);
+        padding: 2rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: start;
+
+        h3 {
+          font-size: 30px;
+          font-weight: 700;
+        }
+
+        button {
+          border: 2px solid var(--secondary);
+          background-color: inherit;
+
+          a {
+            color: var(--secondary);
+          }
+        }
+      }
+    }
+  }
+}
+
+#services {
+  width: 75%;
+  margin-block: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+
+  .service {
+    width: 20%;
+    height: 308px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    img {
+      width: 96px;
+    }
+
+    h4 {
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+}
+
+#aboutUs {
+  width: 75%;
+  margin-bottom: 4rem;
+
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 3rem;
+
+  .left-container {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 2rem;
+
+    .title {
+      padding-inline: 2rem;
+      padding-block: 4rem;
+      background-color: var(--accent);
+      border-radius: 0 0 50px 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      h5 {
+        font-size: 1.2rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+      }
+
+      h2 {
+        font-size: 48px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .right-container {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    gap: 4rem;
+
+    .thinking-about-us-image {
+      border-radius: 50%;
+      width: 255px;
+      height: 255px;
+    }
+
+    .details {
+      display: flex;
+      justify-content: space-between;
+      gap: 3rem;
+
+      .img-container {
+        background-color: var(--secondary);
+        border-radius: 50%;
+        width: 64px;
+        height: 64px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 36px;
+          height: 36px;
+        }
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        gap: 1.5rem;
+        max-width: 80%;
+
+        h4 {
+          font-size: 18px;
+          font-weight: 700;
+          letter-spacing: 4px;
+          text-transform: uppercase;
+        }
+
+        p {
+          font-size: 16px;
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+}
+
+#coaching {
+  width: 100%;
+  background-color: var(--accent);
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  gap: 2rem;
+
+  .content {
+    padding-block: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 600px;
+
+    h5 {
+      font-size: 1.2rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+    }
+
+    h2 {
+      font-size: 48px;
+      font-weight: 700;
+    }
+
+    p.disc {
+        font-size: 20px;
+        line-height: 32px;
+    }
+  }
+
+  .img-container {
+    height: 630px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    width: 45%;
+    img {
+    height:100%;
+    width: 100%;
+  }
+  }
+  
+}
