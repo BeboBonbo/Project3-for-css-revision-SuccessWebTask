@@ -668,7 +668,7 @@ header {
   justify-content: center;
   align-items: center;
   margin-bottom: 4rem;
-  margin-top: 27rem;
+  margin-top: 35rem;
   gap: 4rem;
 
   @media (max-width: 1200px) {
